@@ -10,6 +10,6 @@ services:
     depends_on: 
       - pinger-svc
     environment:
-      - TOKEN=<TELEGRAM-BOT-TOKEN>
-      - ROOM_ID=<TELEGRAM-CHAT-ID>
+      - TELEGRAM-BOT-TOKEN=<TELEGRAM-BOT-TOKEN>
+      - TELEGRAM-CHAT-ID=<TELEGRAM-CHAT-ID>
       - CHECK_IPS_INTERVAL=30
