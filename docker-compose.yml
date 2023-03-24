@@ -1,0 +1,15 @@
+version: '3.5'
+
+services:
+  pinger-svc:
+    build: pinger-svc/.
+    ports:
+      - 8000:8000
+  pinger-bot:
+    build: pinger-bot/.
+    depends_on: 
+      - pinger-svc
+    environment:
+      - TOKEN=<TELEGRAM-BOT-TOKEN>
+      - ROOM_ID=<TELEGRAM-CHAT-ID>
+      - CHECK_IPS_INTERVAL=30
