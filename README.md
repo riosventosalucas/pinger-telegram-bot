@@ -4,7 +4,7 @@ Este proyecto consta de dos partes: el `pinger-bot` y el `pinger-svc`.
 
 ## Pinger-bot
 
-El `pinger-bot` es un bot de Telegram que monitorea la conectividad de las direcciones IP. Periódicamente, el bot enviará un mensaje a un chat de Telegram especificado indicando si una o más direcciones IP no responden.
+El `pinger-bot` es un bot de Telegram que monitorea la conectividad de las direcciones IP. Periódicamente, el bot enviará un mensaje a un chat de Telegram indicando si una o más direcciones IP no responden.
 
 ### Configuración
 
