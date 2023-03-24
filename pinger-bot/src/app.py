@@ -14,7 +14,7 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 # Lee las variables de entorno necesarias para el bot
 TOKEN = getenv("TELEGRAM-BOT-TOKEN")
 ROOM_ID = getenv("TELEGRAM-CHAT-ID")
-CHECK_IPS_INTERVAL = getenv("CHECK-IPS-INVERVAL")
+CHECK_IPS_INTERVAL = int(getenv("CHECK_IPS_INTERVAL"))
 
 # Función para obtener la lista de IPs
 def get_ip_list():
